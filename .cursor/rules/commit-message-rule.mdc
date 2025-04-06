@@ -1,0 +1,35 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+このルールはコミットメッセージ生成に適用されます。
+
+コミットメッセージのフォーマットは以下のルールに従ってください：
+
+1. コミットメッセージの1行目には変更の要点を簡潔に記述してください。
+2. 1行目の先頭には、変更内容に応じた絵文字プレフィックスを必ず追加してください。
+   - 初回コミット: 🎉 (例: `🎉 Initial project setup`)
+   - バージョンタグ: 🔖 (例: `🔖 Bump version to v1.2.0`)
+   - 新機能追加: ✨ (例: `✨ Add user authentication feature`)
+   - バグ修正: 🐛 (例: `🐛 Fix login validation error`)
+   - セキュリティ修正: 🔒 (例: `🔒 Fix XSS vulnerability in input fields`)
+   - メタデータ更新: 📇 (例: `📇 Update package.json dependencies`)
+   - リファクタリング: ♻️ (例: `♻️ Refactor user authentication flow`)
+   - ドキュメント: 📚 (例: `📚 Add API documentation`)
+   - 国際化: 🌐 (例: `🌐 Add Japanese translations`)
+   - アクセシビリティ: ♿ (例: `♿ Improve form field screen reader support`)
+   - パフォーマンス: 🐎 (例: `🐎 Optimize image loading performance`)
+   - デザイン・UI: 🎨 (例: `🎨 Update button styles across app`)
+   - ツール・設定: 🔧 (例: `🔧 Configure webpack for production build`)
+   - テスト: 🚨 (例: `🚨 Add unit tests for auth module`)
+   - 非推奨化: 💩 (例: `💩 Deprecate legacy API endpoints`)
+   - コード削除: 🗑️ (例: `🗑️ Remove unused components`)
+   - 作業中: 🚧 (例: `🚧 WIP: Implement checkout process`)
+
+3. 変更内容が大きい場合や複雑な場合は、1行目の後に1行空けて、詳細を3行以内で追記してください。
+   例:
+    ✨ ユーザー認証機能を追加
+        - JWT ベースの認証をリフレッシュトークンで実装 
+        - ログイン、登録、パスワードリセットフォームを追加
+        - セキュリティのためにレート制限を含める
